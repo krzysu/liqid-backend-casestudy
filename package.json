@@ -5,6 +5,7 @@
   "scripts": {
     "datax": "json-server db.json --port 3000",
     "test": "vitest --watch",
+    "typecheck": "tsc --noEmit",
     "start": "npx prisma db push && tsx --watch src/index.ts",
     "postinstall": "npx prisma generate",
     "create:zip": "zip -r liqid-casestudy.zip . -x@zipExclude.lst"
